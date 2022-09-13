@@ -1,0 +1,8 @@
+# @package _group_
+nneighbor: 16
+nblocks: 4
+transformer_dim: 512
+head: default
+transformer_backbone: deit_tiny_patch16_224
+pretrained: True
+name: 3DViT_0_layer

@@ -1,0 +1,23 @@
+batch_size: 1
+epoch: 200
+learning_rate: 0.05
+gpu: 0
+num_point: 1024
+optimizer: SGD
+weight_decay: 1e-4
+normal: True
+lr_decay: 0.5
+step_size: 20
+portion: 1.0
+
+data_path:  ./data/shapenetcore_partanno_segmentation_benchmark_v0_normal
+
+defaults:
+  - model: 3DViT
+hydra:
+  run:
+    dir: cls/partseg/${model.name}/${model.transformer_backbone}/${model.pretrained}
+
+  sweep:
+    dir: cls/partseg/
+    subdir: ${model.name}/${model.transformer_backbone}/${model.pretrained}

@@ -1,0 +1,22 @@
+batch_size: 4
+epoch: 20
+learning_rate: 0.5
+gpu: 1
+num_point: 4096
+optimizer: SGD
+weight_decay: 1e-4
+normal: True
+lr_decay: 0.8
+step_size: 20
+
+data_path: ./data/stanford_indoor3d
+
+defaults:
+  - model: 3DViT_s3dis
+hydra:
+  run:
+    dir: cls/S3DIS/${model.name}_${model.nblocks}_${num_point}_${learning_rate}_${batch_size}_${epoch}_${model.pretrained}
+
+  sweep:
+    dir: cls/S3DIS
+    subdir: ${model.name}_${model.nblocks}_${num_point}_${learning_rate}_${batch_size}_${epoch}_${model.pretrained}

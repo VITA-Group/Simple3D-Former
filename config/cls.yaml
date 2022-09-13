@@ -1,0 +1,24 @@
+batch_size: 64
+epoch: 200
+learning_rate: 1e-2
+gpu: 0
+num_point: 1024
+optimizer: SGD
+weight_decay: 1e-4
+normal: True
+
+lr_decay: 0.1
+step_size: 100
+
+data_path: ./data/modelnet40_normal_resampled/
+
+
+defaults:
+  - model: 3DViT
+hydra:
+  run:
+    dir: cls/M40class/${model.name}/${model.transformer_backbone}/${model.pretrained}
+
+  sweep:
+    dir: cls/M40class/
+    subdir: ${model.name}/${model.transformer_backbone}/${model.pretrained}

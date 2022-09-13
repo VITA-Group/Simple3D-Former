@@ -1,0 +1,25 @@
+batch_size: 32
+epoch: 200
+learning_rate: 0.05
+gpu: 0
+num_point: 1024
+optimizer: SGD
+weight_decay: 1e-4
+normal: True
+lr_decay: 0.1
+step_size: 100
+M: 64
+portion: 1.0
+
+shapenetpart_data_path: ./data/shapenetcore_partanno_segmentation_benchmark_v0_normal
+imagenet_data_path: ./data/ImageNet/ILSVRC/Data/CLS-LOC
+
+defaults:
+  - model: 3DViT_1_layer
+hydra:
+  run:
+    dir: cls/partseg/lwf_${M}_${portion}/${model.name}/${model.transformer_backbone}/${model.pretrained}
+
+  sweep:
+    dir: cls/partseg/lwf_${M}_${portion}
+    subdir: ${model.name}/${model.transformer_backbone}/${model.pretrained}
