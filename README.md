@@ -36,7 +36,6 @@ Currently ShapeNetV2/ModelNet40/ShapeNetPart are required. The teacher dataset i
 *   ShapeNetPart: Download it from here: https://shapenet.cs.stanford.edu/media/shapenetcore_partanno_segmentation_benchmark_v0_normal.zip;
 *   ImageNet 1K: Download it from kaggle: https://www.kaggle.com/c/imagenet-object-localization-challenge/data;
 *   ScanObjectNN: Download it from here: http://103.24.77.34/scanobjectnn/h5_files.zip
-*   [S3DIS](http://buildingparser.stanford.edu/dataset.html): Download it from here: https://drive.google.com/drive/folders/0BweDykwS9vIoUG5nNGRjQmFLTGM?resourcekey=0-dHhRVxB0LDUcUVtASUIgTQ
 
 Then extract all files in ```./data/``` folder in current project. You can modify config files under ```./config/``` for a specific data location (especially if you are downloading full ImageNet instead of this particular subset). In addition, after downloading ModelNet40, you need to create all *.binvox file by doing:
 
@@ -78,5 +77,4 @@ These part of scripts is adapted from https://github.com/qq456cvb/Point-Transfor
 *  Point Cloud Classification: ```python train_cls.py``` or ```python train_cls_scanobjectnn.py```;
 *  Point Cloud Part Segmentation: ```python train_partseg.py```;
 *  Point Cloud Part Segmentation with 2D knowledge: ```python train_partseg_lwf.py```
-*  Point Cloud Indoor Scene Segmenetation (TBD)
 *  Point Cloud Object Detection (TBD)
