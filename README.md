@@ -1,5 +1,5 @@
-# Simple3D-Former [paper(arxiv)](https://arxiv.org/pdf/2209.07026.pdf)
-Simple3D-Former Implementation 
+# Simple3D-Former [[arxiv]](https://arxiv.org/pdf/2209.07026.pdf)
+This is the official repo of Simple3D-Former.
 
 ## Perquisitive
 
