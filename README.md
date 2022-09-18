@@ -1,5 +1,5 @@
-# Simple3D-Former
-Simple3D-Former Implementation
+# Simple3D-Former [paper(arxiv)](https://arxiv.org/pdf/2209.07026.pdf)
+Simple3D-Former Implementation 
 
 ## Perquisitive
 
