@@ -1,5 +1,5 @@
-# Simple3D-Former [[arxiv]](https://arxiv.org/pdf/2209.07026.pdf)
-This is the official repo of Simple3D-Former.
+# Simple3D-Former
+This is the official repo for [Can We Solve 3D Vision Tasks Starting from A 2D Vision Transformer?](https://arxiv.org/pdf/2209.07026.pdf)
 
 ## Perquisitive
 
