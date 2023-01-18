@@ -1,0 +1,12 @@
+einops==0.3.0
+linformer==0.2.1
+torch==1.7.1
+torchvision==0.8.2
+tqdm
+timm==0.3.2
+ptflops
+hydra==2.5
+hydra-core==1.1.1
+omegaconf==2.1.1
+h5py
+plyfile
