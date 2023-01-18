@@ -30,7 +30,7 @@ We provide a simple ```requirements.txt``` to install the library (with full pac
 
 Currently ShapeNetV2/ModelNet40/ShapeNetPart are required. The teacher dataset is the ImageNet validation set (in ImageNet 1K).
 
-*   ShapeNetV2: Download it from here: https://shapenet.cs.stanford.edu/shapenet/obj-zip/ShapeNetCore.v2.zip;s
+*   ShapeNetV2: Download it from here: https://shapenet.cs.stanford.edu/shapenet/obj-zip/ShapeNetCore.v2.zip;
 *   ModelNet40: Download it from here: https://modelnet.cs.princeton.edu/ModelNet40.zip;
 *   ModelNet40 point cloud samples: Download it from here: https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip;
 *   ShapeNetPart: Download it from here: https://shapenet.cs.stanford.edu/media/shapenetcore_partanno_segmentation_benchmark_v0_normal.zip;
